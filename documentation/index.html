@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webs - Sliders & Galleries</title>
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="./doc.css">
+</head>
+
+<body class="loaded" data-loader-text="Loading...">
+    <!-- navigation start -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
+                    color="rgb(255, 255, 255)"
+                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: rgb(255, 255, 255); flex-shrink: 0; cursor: auto;">
+                    <g color="rgb(255, 255, 255)" weight="bold">
+                        <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="rgb(255, 255, 255)"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                        <line x1="51.8" y1="84" x2="204.2" y2="172" fill="none" stroke="rgb(255, 255, 255)"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                        <line x1="51.8" y1="172" x2="204.2" y2="84" fill="none" stroke="rgb(255, 255, 255)"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <!-- navigation end -->
+    <!-- documentation start -->
+    <div class="documentation">
+        <div class="container">
+            <p class="paragraph">
+                Webs - Sliders & Galleries
+            </p>
+            <h1 class="title">
+                Documentation
+            </h1>
+            <img src="/assets/banner.png" alt="error">
+            <h1 class="sub-title">
+                1. Installation
+            </h1>
+            <div class="line"></div>
+            <p class="paragraph">
+                To install the Webs - Sliders & Galleries, in your project. You need to paste the following files in
+                your project. <br>
+                <br>
+                But, these files are depends on your requirement. <br>
+                If you want to use the infinite slider, then you need to paste the infinite slider files. <br>
+                <span class="file-name">/plugins/Slider.js</span><br />
+                <br>
+                If you want to use the normal slider, then you need to paste the normal slider files. <br>
+                <span class="file-name">/plugins/Slider-normal.js</span><br />
+                <br>
+                and also you need to add gsap library in your project. without <span class="bold">gsap</span> library,
+                the slider will not work.
+                <br />
+                These are the files that you need to paste in your project. <br>
+            </p>
+            <img src="./assets/1.png" alt="IMAGE" class="img">
+        </div>
+    </div>
+    <!-- documentation end -->
+    <!-- documentation start -->
+    <div class="documentation">
+        <div class="container">
+            <h1 class="sub-title">
+                2. Usage
+            </h1>
+            <div class="line"></div>
+            <p class="paragraph">
+                To use the Webs - Sliders & Galleries, after install required files, you need to add the following code
+                in your project. <br>
+                <br>
+                But, these code are depends on your requirement. <br>
+                <br />
+                Both, the infinite slider and normal slider have the same code. There is only one difference that is
+                file name.
+                You need to use the file name that you have pasted in your project. <br>
+                <br />
+                First, <span class="bold">HTML</span> code. For slider you need to add the following code in your HTML.
+                <br />
+            </p>
+            <img src="./assets/2.png" alt="IMAGE" class="img">
+            <p class="paragraph">
+                <br />
+                Second, <span class="bold">CSS</span> code.
+                <br />
+                You need to add following CSS code.
+            </p>
+            <img src="./assets/3.png" alt="IMAGE" class="img">
+            <img src="./assets/4.png" alt="IMAGE" class="img">
+            <p class="paragraph">
+                <span class="bold">NOTE:</span> All slides must have the same width and height. Otherwise slider not
+                work properly. <br />
+            </p>
+            <p class="paragraph">
+                <br />
+                Third, <span class="bold">JavaScript</span> code. <br />
+                Now, You need to add following JavaScript code. <br />
+                <br />
+                <span class="bold">NOTE:</span> You need to add the following code after the DOM is loaded. We also
+                provide our <span class="bold">custom image loader</span> for <span class="bold">Slider</span>. you can
+                use
+                our loader which are available in all sliders and galleries files. Or you can use any other image loader
+                like <span class="bold">imagesloaded</span> or your own loader.<br />
+                <br />
+                Generally, we use the following code for our loader. <br />
+                <br />
+                <span class="bold">preloader</span> function gets all the images in the page and load them, and we set
+                one other function, which is <span class="bold">preloaderProgress</span> function. This function watch
+                the progress of how many images are loaded.
+                <img src="./assets/5.png" alt="IMAGE" class="img">
+                <br />
+                <span class="bold">preloaderProgress</span> function call on every image load.
+                <img src="./assets/6.png" alt="IMAGE" class="img">
+                <br />
+                <span class="blod">onLoaded</span> function is call when all the images are loaded. In this function you
+                can add entry animations.
+                <img src="./assets/7.png" alt="IMAGE" class="img">
+            </p>
+            <p class="paragraph">
+                <span class="bold">Slider</span> class is available in both the infinite slider and normal slider
+                files. <br />
+                <br />
+                <span class="bold">NOTE:</span> You need to add the following code in <span class="bold">onLoaded</span>
+                function <br />
+            </p>
+            <img src="./assets/9.png" alt="IMAGE" class="img">
+            <img src="./assets/8.png" alt="IMAGE" class="img">
+        </div>
+    </div>
+    <!-- documentation end -->
+    <!-- documentation start -->
+    <div class="documentation">
+        <div class="container">
+            <h1 class="sub-title">3. Output</h1>
+            <div class="line"></div>
+            <p class="paragraph">
+                After adding the above code, the <span class="bold">Slider</span> is ready to use. <br />
+                <br />
+                <span class="bold">Output</span> of the <span class="bold">Slider</span> is available in the following
+                image. <br />
+            </p>
+            <img src="./assets/10.png" alt="IMAGE" class="img">
+        </div>
+    </div>
+    <!-- documentation end -->
+    <!-- documentation start -->
+    <div class="documentation">
+        <div class="container">
+            <h1 class="sub-title">4. Animation</h1>
+            <div class="line"></div>
+            <p class="paragraph">
+                <span class="bold">Animation</span>, main feature of the our <span class="bold">Slider</span>. <br />
+                <br />
+                You can animate the <span class="bold">Slider</span> with the following code. <br />
+                <br />
+                First, you have create a new <span class="bold">function</span> with one parameter. this parameter is
+                the
+                <span class="bold">Slider</span> object. and you have add <span
+                    class="bold">requestAnimationFrame</span> in this function. <br />
+                <br />
+                Second, you have add the following code in the <span class="bold">requestAnimationFrame</span>
+                <img src="./assets/11.png" alt="IMAGE" class="img">
+                <br />
+                In, this function you have use <span class="bold">GSAP</span> to animate the <span
+                    class="bold">Slides</span> with the
+                <span class="bold">Slider</span> object's <span class="bold">scroll</span> property. <br />
+                <br />
+                <span class="bold">NOTE:</span> <span class="bold">Slider</span> class provide scroll object. this
+                object have speed property, which are use to animate the <span class="bold">Slides</span> on scroll.
+                <br />
+            </p>
+        </div>
+    </div>
+    <!-- documentation end -->
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container">
+            <img src="/assets/icon.svg" alt="icon" class="img">
+            <div class="line"></div>
+            <p class="paragraph">
+                Thanks for using our Bundle.
+            </p>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>

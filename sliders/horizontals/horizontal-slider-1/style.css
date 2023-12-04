@@ -1,0 +1,50 @@
+/* make body full screen */
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* slider style */
+/* Slider wrapper */
+.slider.slider-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Slier slides wrapper */
+.slider .slider-inner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* set slide size */
+/* all slides require same size. other wise slider can't work properly */
+.slider .slider-inner .slider-slide {
+  width: 50rem;
+  height: 100vh;
+  position: absolute;
+  /* custom style, set style by yourself to decorate your slider */
+  display: grid;
+  place-items: center;
+}
+
+.slider .slider-inner .slider-slide img {
+  width: 100%;
+  height: auto;
+  /* custom style */
+  height: 70vh;
+  transition: all 0.5s ease;
+}
+
+/* when user drag slider then apply bottom style */
+.is-dragging {
+  cursor: grabbing;
+}
+
+.is-dragging img {
+  transform: scale(0.9);
+}

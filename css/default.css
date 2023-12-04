@@ -1,0 +1,293 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap");
+
+/* normal require css for all web pages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  min-height: 100%;
+  height: auto;
+}
+
+html {
+  min-height: 100vh;
+  position: relative;
+  scroll-behavior: initial;
+  font-size: calc(100vw / 1920 * 10);
+}
+
+@media only screen and (max-width: 820px) {
+  html {
+    font-size: calc(100vw / 390 * 10);
+  }
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* preloader */
+body::after {
+  position: absolute;
+  content: attr(data-loader-text);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  font-size: 5rem;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  z-index: 5;
+  transition: all 0.5s ease;
+}
+
+body.loaded::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover !important;
+  user-select: none;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(15, 23, 42, 1);
+  border-radius: 10px;
+}
+
+/* utilities classes */
+.container {
+  max-width: 70%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+.big-container {
+  max-width: 90%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* text sizes */
+.title {
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 13rem;
+}
+
+.sub-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.medium-title {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+.btn {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  background: #ffffff;
+  color: #000000;
+  padding: 3rem 4rem;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #0f0f0f;
+}
+
+/* navigation */
+nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+nav .nav-container {
+  max-width: 90%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+  pointer-events: none;
+}
+
+nav .nav-container a.logo,
+nav .nav-container a.logo svg {
+  width: 5rem;
+  height: 5rem;
+}
+
+nav .nav-container a.logo svg {
+  pointer-events: none;
+}
+
+nav .nav-container a.logo {
+  pointer-events: all;
+}
+
+/* about */
+.about {
+  width: 100%;
+  height: auto;
+}
+
+.about .big-container,
+.about .container {
+  padding: 10rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.about .big-container p,
+.about .container p {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.about .big-container p:nth-of-type(2),
+.about .container p:nth-of-type(2) {
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: auto;
+}
+
+footer .big-container,
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+footer .big-container img,
+footer .container img {
+  width: 4rem;
+  height: 4rem;
+  animation: rotate 5s linear infinite;
+  margin-bottom: 2rem;
+}
+
+/* media query */
+@media only screen and (max-width: 820px) {
+  .title {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  nav .nav-container {
+    padding: 2rem 0;
+  }
+
+  nav .nav-container a.logo,
+  nav .nav-container a.logo svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .about .big-container,
+  .about .container {
+    padding: 5rem 0;
+  }
+
+  .about .big-container p,
+  .about .container p {
+    width: 100%;
+  }
+
+  footer .big-container,
+  footer .container {
+    padding: 2rem 0;
+  }
+
+  footer .big-container img,
+  footer .container img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
